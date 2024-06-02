@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D9D9D9;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e2225;
+    padding: 15px;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.header a img{
+    width: 50px;
+}
+
+.header a h1{
+    font-family: 'Timmana';
+    margin-bottom: -12px;
+    color: #76CCCF;
+}
+
+.header a h1 span{
+    color: #FFFFFF;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navbar ul a{
+    margin-inline: 30px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar ul a:hover{
+    color: #F89E49;
+}
+
+.first-container{
+    width: 85%;
+    margin: auto;
+}
+
+.first-container #cars-header{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-size: 40px;
+    font-weight: 800;
+    color: #363D43;
+    text-align: center;
+}
+
+.first-container .cars-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first-container .cars-container .car-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.first-container .cars-container .car-type .inside-car-cont{
+    position: relative;
+}
+
+.first-container .cars-container .car-type .inside-car-cont .car-status{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px 14px;
+}
+
+.first-container .cars-container .car-type .inside-car-cont span{
+    font-family: 'Overpass';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.first-container .cars-container
+.car-type:nth-child(2) .inside-car-cont span,
+.car-type:nth-child(3) .inside-car-cont span,
+.car-type:nth-child(5) .inside-car-cont span,
+.car-type:nth-child(7) .inside-car-cont span{
+    color: #a7a7a7;
+}
+
+.first-container .cars-container .car-type .inside-car-cont img{
+    margin: 10px;
+    padding: 20px;
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.first-container .cars-container .car-type hr{
+    width: 65%;
+    margin: -30px auto 5px auto;
+    border: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.first-container .cars-container .car-type .car-name{
+    text-align: center;
+    font-family: 'Overpass';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.first-container .cars-container .car-type .car-brand{
+    text-align: center;
+    font-family: 'Overpass';
+    font-size: 12px;
+}
+
+.first-container .cars-container .car-type .car-link{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.first-container .cars-container .car-type .car-link a{
+    color: #F89E49;
+    text-decoration: none;
+    border: 2px solid #F89E49;
+    border-radius: 20px;
+    padding: 5px;
+    width: 40%;
+    margin: 5px auto;
+    font-family: 'Be VIetnam Pro';
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.first-container .cars-container .car-type .car-link a:hover{
+    color: white;
+    background-color: orange;
+}
+
+.first-container .view-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 30px;
+}
+
+.first-container .view-all a{
+    color: #363D43;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 500;
+    padding: 10px 30px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #363D43;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.first-container .view-all a:hover{
+    background-color: #363D43;
+    color: white;
+}
+
+.collab-header{
+    margin-top: 30px;
+    text-align: center;
+    color: #363D43;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 600;
+}
+
+.collab-carousel{
+    position: relative;
+    max-width: fit-content;
+    margin: auto auto 50px auto;
+}
+
+.collab-carousel .collab-slides{
+    padding: 30px;
+}
+
+.collab-carousel img{
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+    display: none;
+}
+
+img.display-image{
+    display: block;
+}
+
+.collab-carousel button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(124, 124, 124);
+    color: #ffffff;
+}
+
+.next{
+    right: 0;
+    margin-right: -30px;
+}
+
+.prev{
+    left: 0;
+    margin-left: -30px;
+}
+
+.footer{
+    background-color: #1e2225;
+    padding: 70px 0;
+}
+
+.footer-container{
+    width: 70%;
+    margin: auto;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.f-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.f-col h4{
+    font-family: 'Overpass';
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.f-col h4::before{
+    content: '';
+    position: absolute;
+    left: 1px;
+    bottom: -8px;
+    background-color: #F89E49;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.f-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.f-col ul li a{
+    text-decoration: none;
+    font-family: 'Overpass';
+    font-weight: 300;
+    font-size: 16px;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.f-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 7px;
+}
+
+.f-col .social-links a img{
+    margin: 0 20px 0 0;
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.f-col .social-links a img:hover{
+    transform: scale(1.1);
+}
+
+.f-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+
+.copyright span{
+    color: #ffffff;
+    font-family: 'Overpass';
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px){
+    .header a img{
+        width: 30px;
+    }
+    
+    .header a h1{
+        margin-bottom: -9px;
+        font-size: 24px;
+    }
+
+    .navbar ul a{
+        margin-inline: 15px;
+        font-size: 12px;
+    }
+
+    .f-col .social-links a img{
+        margin: 0 10px 10px 0;
+    }
+}

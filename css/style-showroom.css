@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D9D9D9;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e2225;
+    padding: 15px;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.header a img{
+    width: 50px;
+}
+
+.header a h1{
+    font-family: 'Timmana';
+    margin-bottom: -12px;
+    color: #76CCCF;
+}
+
+.header a h1 span{
+    color: #FFFFFF;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navbar ul a{
+    margin-inline: 30px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar ul a:hover{
+    color: #F89E49;
+}
+
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.jumbotron img{
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.jumbotron .jumbotron-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.jumbotron .jumbotron-content h1{
+    color: white;
+    font-family: 'Anton';
+    font-size: 104px;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.jumbotron .jumbotron-content h1 span{
+    color: #F89E49;
+}
+
+.jumbotron .jumbotron-content .inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron .jumbotron-content .inputs input{
+    padding: 15px 30px;
+    width: 60%;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    caret-color: #ffffff;
+    color: #ffffff;
+}
+
+.jumbotron .jumbotron-content .inputs input::placeholder{
+    font-family: 'Overpass';
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.jumbotron .jumbotron-content .inputs button{
+    font-family: 'Overpass';
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0 40px 40px 0;
+    padding: 14px 30px;
+    background-color: transparent;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-left: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.jumbotron .jumbotron-content .inputs button:hover{
+    background-color: #ffffff4d;
+}
+
+.jumbotron .jumbotron-content .further-info{
+    margin-top: 20px;
+}
+
+.jumbotron .jumbotron-content .further-info span{
+    font-family: 'Overpass';
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.jumbotron .jumbotron-content .further-info span a{
+    color: #F89E49;
+}
+
+.jumbotron .jumbotron-content .further-info span a:hover{
+    color: #bb7636;
+}
+
+.carousel{
+    height: 250px;
+    margin: auto;
+    margin-block: 10px;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.carousel-track{
+    display: flex;
+    width: calc(550px * 16);
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-450px * 4));
+    }
+}
+
+.cc-content{
+    height: 200px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+}
+
+.cc-content img{
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel::before{
+    background: linear-gradient(to right, rgba(217,217,217, 1), rgba(217,217,217, 0));
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
+.carousel::after{
+    background: linear-gradient(to left, rgba(217,217,217, 1), rgba(217,217,217, 0));
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+
+.featured-loc{
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.featured-loc #featured-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Be Vietnam Pro';
+    font-size: 40px;
+    font-weight: 800;
+    color: #363D43;
+    text-align: center;
+}
+
+.featured-loc .location{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-block: 10px;
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.featured-loc .location:nth-child(3),
+.featured-loc .location:nth-child(5){
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.featured-loc .location img{
+    height: 280px;
+    width: 500px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.featured-loc .location .loc-details{
+    margin-inline: 10px;
+    font-family: 'Overpass';
+}
+
+.featured-loc .location .loc-details h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: #5f6972;
+}
+
+.featured-loc .location .loc-details hr{
+    position: relative;
+    height: 2px;
+    border: 2px solid #F89E49;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.featured-loc .location .loc-details .locline{
+    margin: 0 0 0 auto;
+}
+
+.featured-loc .location .loc-details .address{
+    margin-top: 20px;
+}
+
+.featured-loc .location .loc-details span, p{
+    color: #363D43;
+}
+
+.featured-loc .location .loc-details .loc-links{
+    margin-top: 20px;
+}
+
+.featured-loc .location .loc-details a{
+    padding: 10px;
+    border: 2px solid #F89E49;
+    border-radius: 10px;
+    color: #F89E49;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.featured-loc .location .loc-details a:hover{
+    color: #ffffff;
+    background-color: #F89E49;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.gallery .gallery-title{
+    margin-top: 60px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.gallery .gallery-title h1{
+    font-family: 'Be Vietnam Pro';
+    font-size: 40px;
+    font-weight: 800;
+    color: #363D43;
+}
+
+.gallery .gallery-title p{
+    font-family: 'Overpass';
+    color: #67727c;
+}
+
+.gallery .gallery-title p a{
+    color: #F89E49;
+}
+
+.gallery .gallery-title p a:hover{
+    color: #bb7636;
+}
+
+.gallery .gallery-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery .gallery-image .gi-content{
+    margin: 10px;
+}
+
+.gallery img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover{
+    transform: scale(1.05);
+}
+
+.footer{
+    background-color: #1e2225;
+    padding: 70px 0;
+}
+
+.footer-container{
+    width: 70%;
+    margin: auto;
+}
+
+.footer ul{
+    list-style-type: none;
+}
+
+.f-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.f-col h4{
+    font-family: 'Overpass';
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.f-col h4::before{
+    content: '';
+    position: absolute;
+    left: 1px;
+    bottom: -8px;
+    background-color: #F89E49;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.f-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.f-col ul li a{
+    text-decoration: none;
+    font-family: 'Overpass';
+    font-weight: 300;
+    font-size: 16px;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.f-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 7px;
+}
+
+.f-col .social-links a img{
+    margin: 0 20px 0 0;
+    width: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.f-col .social-links a img:hover{
+    transform: scale(1.1);
+}
+
+.f-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+
+.copyright span{
+    color: #ffffff;
+    font-family: 'Overpass';
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px){
+    .header a img{
+        width: 30px;
+    }
+    
+    .header a h1{
+        margin-bottom: -9px;
+        font-size: 24px;
+    }
+
+    .navbar ul a{
+        margin-inline: 15px;
+        font-size: 12px;
+    }
+
+    .jumbotron img{
+        height: 500px;
+    }
+    
+    .jumbotron .jumbotron-content h1{
+        font-size: 72px;
+    }
+    
+    .jumbotron .jumbotron-content .further-info{
+        margin-top: 10px;
+    }
+    
+    .jumbotron .jumbotron-content .further-info span{
+        font-size: 10px;
+    }
+
+    .carousel{
+        height: 120px;
+    }
+    
+    .carousel-track{
+        width: calc(250px * 16);
+    }
+    
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-350px * 4));
+        }
+    }
+    
+    .cc-content{
+        height: 100px;
+        width: 250px;
+        margin: 5px;
+    }
+
+    .featured-loc{
+        width: 80%;
+    }
+    
+    .featured-loc #featured-title{
+        font-size: 34px;
+    }
+    
+    .featured-loc .location img{
+        height: 200px; 
+        width: 300px;
+    }
+    
+    .featured-loc .location .loc-details{
+        font-size: 12px;
+    }
+    
+    .featured-loc .location .loc-details h1{
+        font-size: 30px;
+    }
+    
+    .featured-loc .location .loc-details hr{
+        width: 80px;
+    }
+    
+    .featured-loc .location .loc-details .address{
+        margin-top: 10px;
+    }
+    
+    .featured-loc .location .loc-details a{
+        padding: 6px;
+    }
+
+    .gallery .gallery-title h1{
+        font-size: 32px;
+    }
+    
+    .gallery .gallery-title p{
+        margin: auto;
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .f-col .social-links a img{
+        margin: 0 10px 10px 0;
+    }
+}
