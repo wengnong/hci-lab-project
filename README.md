@@ -10,6 +10,22 @@ DiamondCut Motors is a prototype website for showcasing and selling luxury cars.
 - **About Us Page**: Provides deeper information about DiamondCut Motors as a synergic company.
 - **Login Page**: Provides a login form for the customer.
 
+## Documentation
+- **Home Page**
+![Home Page](documentation/homepage.png)
+
+- **Cars Page**
+![Cars Page](documentation/carspage.png)
+
+- **Showroom Page**
+![Showroom Page](documentation/showroompage.png)
+
+- **About Us Page**
+![About Us Page](documentation/aboutuspage.png)
+
+- **Login Page**
+![Login Page](documentation/loginpage.png)
+
 ## Technologies Used
 
 ### **Frontend**
