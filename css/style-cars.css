@@ -132,6 +132,11 @@ body{
     width: 350px;
     height: 200px;
     object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.first-container .cars-container .car-type .inside-car-cont img:hover{
+    transform: scale(0.9);
 }
 
 .first-container .cars-container .car-type hr{
@@ -355,6 +360,36 @@ img.display-image{
     .navbar ul a{
         margin-inline: 15px;
         font-size: 12px;
+    }
+
+    .first-container #cars-header{
+        margin-bottom: 5px;
+        font-size: 32px;
+    }
+
+    .f-col .social-links a img{
+        margin: 0 10px 10px 0;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .header a img{
+        width: 24px;
+    }
+    
+    .header a h1{
+        margin-bottom: -5px;
+        font-size: 16px;
+    }
+
+    .navbar ul a{
+        margin-inline: 12px;
+        font-size: 8px;
+    }
+    
+    .first-container #cars-header{
+        margin-bottom: 5px;
+        font-size: 28px;
     }
 
     .f-col .social-links a img{

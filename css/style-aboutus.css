@@ -320,3 +320,67 @@ body{
         margin: 0 10px 10px 0;
     }
 }
+
+@media only screen and (max-width: 570px){
+    .header a img{
+        width: 24px;
+    }
+    
+    .header a h1{
+        margin-bottom: -5px;
+        font-size: 16px;
+    }
+
+    .navbar ul a{
+        margin-inline: 12px;
+        font-size: 8px;
+    }
+    
+    .main .main-container img{
+        height: 250px;
+        object-position: 0% 70%;
+    }
+
+    .main .main-container .text{
+        width: 80%;
+    }
+    
+    .main .main-container .text h1{
+        font-size: 30px;
+    }
+    
+    .main .main-container .text p{
+        font-size: 10px;
+    }
+    
+    .main .social-container img{
+        height: 100px;
+    }
+    
+    .main .social-container::before{
+        height: 100px;
+    }
+    
+    .main .social-container .social-text{
+        margin-left: 30px;
+    }
+    
+    .main .social-container h1{
+        font-size: 16px;
+    }
+    
+    .main .social-container .social-logo .logo-container{
+        border-radius: 15px;
+        padding: 10px;
+        margin-inline: 10px;
+    }
+    
+    .main .social-container .social-logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .f-col .social-links a img{
+        margin: 0 10px 10px 0;
+    }
+}
